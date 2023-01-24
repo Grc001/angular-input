@@ -1,0 +1,9 @@
+<div>
+  <p>{{ user.firstName }} {{ user.lastName }}</p>
+  <p>{{ user.age }}</p>
+  <p>{{ user.gender }}</p>
+  <p>{{ user.bio }}</p>
+  <div *ngFor="let skill of user.skills">
+  <app-skill [skill]="skill"></app-skill></div>
+</div>
+
